@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Spirax);
+
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+body
+{
+  background-color: #555555;
+  padding: 50px;
+}
+
+.stock
+{
+  font-family: 'Spirax', cursive;
+  width: 100px;
+  float: left;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 25px 0px 25px 0px;
+  margin: 50px;
+}
+
+textarea
+{
+  width: 200px;
+  height: 100px;
+}
