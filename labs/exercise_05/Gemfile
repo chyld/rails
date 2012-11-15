@@ -7,6 +7,8 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 gem 'httparty'
+gem 'pry-rails'
+gem 'rails-footnotes'
 
 # Gems used only for assets and not required
 # in production environments by default.

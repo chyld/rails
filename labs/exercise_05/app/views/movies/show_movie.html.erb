@@ -1,5 +1,6 @@
 <% @movies.each do |movie| %>
   <div class='movie'>
+    <%# binding.pry %>
     <%= image_tag movie["Poster"] %>
     <p><%= movie["Title"] %></p>
     <p><%= movie["Year"] %></p>
@@ -32,3 +33,19 @@
     </p>
   </div>
 <% end %>
+
+<!--
+<h1>
+  Debugging Info:
+</h1>
+<p>
+  <%#= debug @movies %>
+</p>
+-->
+
+
+
+
+
+
+
