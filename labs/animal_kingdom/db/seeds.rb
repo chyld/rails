@@ -1,0 +1,5 @@
+Animal.create(:name => "Fido", :species => "Dog")
+Animal.create(:name => "Woof", :species => "Dog")
+Animal.create(:name => "Meow", :species => "Cat")
+Animal.create(:name => "Sssss", :species => "Snake")
+Animal.create(:name => "Who", :species => "Owl")
