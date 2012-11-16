@@ -1,0 +1,8 @@
+<% @output.each do |symbol, stocks| %>
+  <h1><%= symbol %></h1>
+  <ul>
+    <% stocks.each do |stock| %>
+      <li><%= number_to_currency stock.quote %></li>
+    <% end %>
+  </ul>
+<% end %>

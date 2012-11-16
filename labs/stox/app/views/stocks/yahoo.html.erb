@@ -1,0 +1,9 @@
+<h1><%= @symbol %></h1>
+<h2><%= number_to_currency @avg %></h2>
+<ul>
+  <% @quotes.each do |quote| %>
+    <li><%= number_to_currency quote %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Home", root_path %> :: <%= link_to "Tally", tally_path %>
