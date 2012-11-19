@@ -40,6 +40,8 @@ class DogsController < ApplicationController
   # POST /dogs
   # POST /dogs.json
   def create
+    #raise params.inspect
+
     @dog = Dog.new(params[:dog])
 
     respond_to do |format|
