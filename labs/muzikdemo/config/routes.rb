@@ -1,4 +1,6 @@
 Muzikdemo::Application.routes.draw do
+  resources :cats
+
   resources :dogs
 
   # The priority is based upon order of creation:
