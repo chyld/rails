@@ -1,1 +1,3 @@
-$('#creaturetypes').prepend('<li><%= @ct.name %></li>');
+$('#creaturetypes').prepend('<li><%= link_to @ct.name, creaturetype_path(@ct) %></li>');
+$('#creature_form #name').val('');
+$('#creature_form #name').focus();

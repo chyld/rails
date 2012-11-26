@@ -7,6 +7,8 @@
 
 <ul id="creaturetypes">
   <% @creature_types.each do |ct| %>
-    <li><%= ct.name %></li>
+    <li><%= link_to ct.name, creaturetype_path(ct), :class => 'btn btn-info' %></li>
   <% end %>
 </ul>
+
+<%= paginate @creature_types %>
