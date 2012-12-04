@@ -1,11 +1,11 @@
 class Node
-  attr_accessor :data, :nxt
+  attr_accessor :data, :nxt, :prv
 
   def initialize(value)
     @data = value
   end
 
   def to_s
-    "The data is #{data} and the next node's data is #{nxt.data if nxt}"
+    "#{prv.try(:data) || 0} <- #{data} -> #{nxt.try(:data) || 0}"
   end
 end
