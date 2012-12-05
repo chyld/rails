@@ -9,6 +9,16 @@ class Tree
     end
   end
 
+  def sort
+    start_sort(@root)
+  end
+
+  def start_sort(node)
+    start_sort(node.prv) if node.prv
+    puts node.data
+    start_sort(node.nxt) if node.nxt
+  end
+
   def insert_node(node, value)
     if (value <= node.data) && (node.prv.nil?)
       node.prv = Node.new(value)
