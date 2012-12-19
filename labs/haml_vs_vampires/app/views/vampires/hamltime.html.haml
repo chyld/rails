@@ -1,0 +1,13 @@
+#vampires
+  - @vampires.each do |v|
+    .vampire
+      %ul
+        %li= v.name
+        %li= v.blood_type
+        %li= v.team
+        %li hello
+        %li
+          = 3 * 3
+          = 9 * 9
+          = 12 * 12
+        %li= "the date is #{Date.current}"
