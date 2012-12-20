@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @computation.name %>
+</p>
+
+<p>
+  <b>Result:</b>
+  <%= @computation.result %>
+</p>
+
+
+<%= link_to 'Edit', edit_computation_path(@computation) %> |
+<%= link_to 'Back', computations_path %>

@@ -1,0 +1,25 @@
+<%= form_for(@computation) do |f| %>
+  <% if @computation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@computation.errors.count, "error") %> prohibited this computation from being saved:</h2>
+
+      <ul>
+      <% @computation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :result %><br />
+    <%= f.number_field :result %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
