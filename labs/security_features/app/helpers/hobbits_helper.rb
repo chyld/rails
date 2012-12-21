@@ -1,0 +1,2 @@
+module HobbitsHelper
+end

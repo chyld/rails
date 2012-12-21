@@ -1,0 +1,21 @@
+<%= form_for(@hobbit) do |f| %>
+  <% if @hobbit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hobbit.errors.count, "error") %> prohibited this hobbit from being saved:</h2>
+
+      <ul>
+      <% @hobbit.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

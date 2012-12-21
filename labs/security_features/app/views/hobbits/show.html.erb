@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @hobbit.name %>
+</p>
+
+<p>
+  <b>Role:</b>
+  <%= @hobbit.role %>
+</p>
+
+
+<%= link_to 'Edit', edit_hobbit_path(@hobbit) %> |
+<%= link_to 'Back', hobbits_path %>
